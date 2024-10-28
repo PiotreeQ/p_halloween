@@ -7,5 +7,8 @@ CREATE TABLE `halloween_leaderboard` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE `halloween_leaderboard`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `halloween_leaderboard`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
